@@ -9,8 +9,9 @@ source as (
 renamed as (
 
     select
-    orders_idshipping_fee,
-    log_cost,
+    orders_id,
+    shipping_fee,
+    logCost AS log_cost,
     ship_cost
 
     from source
